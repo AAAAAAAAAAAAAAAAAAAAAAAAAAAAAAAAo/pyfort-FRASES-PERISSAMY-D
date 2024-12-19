@@ -1,6 +1,22 @@
 from math import*
 from random import*
 
+def factorielle(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+def epreuve_math_factorielle():
+    n=randint(1,10)
+    resultat=factorielle(n)
+    print("Calculer la factorielle de ",n)
+    reponse=int(input("Votre réponse: "))
+    if reponse==resultat :
+        print("v")
+        return True
+    else :
+        return False
 
 
 
