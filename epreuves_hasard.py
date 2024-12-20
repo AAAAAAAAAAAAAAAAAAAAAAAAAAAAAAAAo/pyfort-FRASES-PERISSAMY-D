@@ -21,15 +21,6 @@ def bonneteau():
     return False
 
 
-
-
-
-
-
-
-
-
-
 def jeu_lance_des():
     vies = 3
     while vies >= 1:
