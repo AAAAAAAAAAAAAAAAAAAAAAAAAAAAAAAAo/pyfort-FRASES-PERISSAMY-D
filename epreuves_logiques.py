@@ -26,6 +26,5 @@ def jeu_nim():
             nb = nb - maitre_retrait(nb)
             tm = False
     return not tm
-jeu_nim()
 
 
