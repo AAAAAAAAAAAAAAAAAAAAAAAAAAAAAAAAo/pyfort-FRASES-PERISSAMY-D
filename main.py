@@ -2,7 +2,8 @@ from epreuves_mathématiques import *
 from epreuves_hasard import *
 from epreuves_logiques import*
 from epreuve_finale import*
-
+from enigme_pere_fouras import*
+from fonctions_utiles import*
 def jeu():
     introduction()
     e = composer_equipe()
@@ -28,13 +29,13 @@ def jeu():
                 print("vous avez gagné une clé")
                 choix_joueur["cles_gagnées"] += 1
                 nb_cle += 1
-        #elif choix_epreuve == 4:
-            #epreuve = enigme_pere_fouras()
-            #if epreuve == True:
-                #print("vous avez gagné une clé")
-                #choix_joueur["cles_gagnées"] += 1
-                #nb_cle += 1
-
+        elif choix_epreuve == 4:
+            epreuve = enigme_pere_fouras()
+            if epreuve == True:
+                print("vous avez gagné une clé")
+                choix_joueur["cles_gagnées"] += 1
+                nb_cle += 1
+    salle_De_Tresor()
 
 
 
