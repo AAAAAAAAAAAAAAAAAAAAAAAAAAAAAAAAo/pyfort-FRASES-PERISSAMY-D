@@ -13,7 +13,6 @@ def epreuve_math_factorielle():
     print("Calculer la factorielle de ",n)
     reponse=int(input("Votre réponse: "))
     if reponse==resultat :
-        print("v")
         return True
     else :
         return False
@@ -42,7 +41,6 @@ def epreuve_math_premier():
     print("Epreuve de mathématiques: Trouver le nombre premier le plus proche de ", n)
     rep = int(input("Votre réponse: "))
     if rep == premier_plus_proche(rep):
-        print("v")
         return True
     else:
         return False
@@ -65,7 +63,6 @@ def epreuve_roulette_mathematique():
     print("Calculez le résultat en combinant ces nombres avec une ", c)
     rep = int(input("votre réponse: "))
     if rep == res:
-        print("v")
         return True
     else:
         return False

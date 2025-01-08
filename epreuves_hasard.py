@@ -1,16 +1,14 @@
 from random import*
 def bonneteau():
     L=['A','B','C']
-    print("Bienvenue,tu disposes de deuxessais pour le trouver À chaque essai, la clé est placée aléatoirement sous l'un des bonneteaux")
+    print("Bienvenue,tu disposes de deux essais pour le trouver À chaque essai, la clé est placée aléatoirement sous l'un des bonneteaux")
     print(L)
     tentatives=2
     a = choice(L)
     for i in range(1,3):
-        print(tentatives)
         c=str(input('Choisissez un bonneteau'))
         c=c.upper()
         if c==a :
-            print("v")
             return True
         elif c!=a and c in L :
             print("Vous n avez pas trouve la clef")
